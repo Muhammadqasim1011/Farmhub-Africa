@@ -23,7 +23,7 @@ body{
 
 p{
     color: var(--grey-clr);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 a{
@@ -119,52 +119,88 @@ a{
 
 .bg-lg{
     border-radius: 20px 0 0 20px;
-    background: linear-gradient(40deg, var(--lightgreen-clr),var(--lightyellow-clr));
+    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
 }
 .bg-gradient-c {
-    background: linear-gradient(90deg, var(--lightgray-clr), var(--lightyellow-clr)) !important;
-  }
+    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+}
 
-  .card-1{
+.card-1{
     margin-top: 3rem !important;
-  }
-  .card-3{
+}
+.card-3{
     margin-top: 2rem !important;
-  }
-  
-  .shadow-light {
+}
+
+.shadow-light {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.12) !important;
-  }
-  
-  .h-fit {
+}
+
+.h-fit {
     height: fit-content;
-  }
-  
-  .font-urbanist {
+}
+
+.font-urbanist {
     font-family: 'Urbanist', sans-serif;
-  }
-  
-  .font-black {
+}
+
+.font-black {
     font-weight: 700;
-  }
-  
-  .overflow-hidden {
+}
+
+.overflow-hidden {
     overflow: hidden;
-  }
-  
-  .rounded-b-xl {
+}
+
+.rounded-b-xl {
     border-bottom-left-radius: 0.75rem !important;
     border-bottom-right-radius: 0.75rem !important;
-  }
-  
-  .card {
+}
+
+.card {
     transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: translateY(-20px);
-  }
-  
+}
+
+ul {
+    padding-inline-start: 0rem !important;
+}
+.package-item > div {
+    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+    padding: 20px;
+}
+.package-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all items take up the full height of their parent */
+}
+
+.package-item ul {
+    
+    padding: 0;
+}
+.package-item ul li {
+    padding: 0 20px;
+    margin-bottom: 7px;
+}
+
+li i{
+    margin-right: 8px;
+}
+.package-item .btn {
+    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+    border: none !important;
+    margin: 0 20px 20px; 
+    width: calc(100% - 40px); 
+    margin-top: auto;
+}
+
 @media (min-width:1200px){
     .feature-content .right img{
         height: 100%;
@@ -172,6 +208,9 @@ a{
 }
 
 @media (max-width:940px){
+    p{
+        font-size: 1rem;
+    }
     .feature-link p{
         font-size: 0.8rem;
     }
@@ -212,7 +251,7 @@ a{
         font-weight: 700;
     }
     p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .h2-size{
         font-size: 2.4rem;
