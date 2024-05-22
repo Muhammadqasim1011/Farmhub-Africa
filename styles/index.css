@@ -1,4 +1,4 @@
-:root{
+:root {
     --light-clr: #f1f1f1;
     --grey-clr: #7f8081;
     --green-clr: #71c047;
@@ -10,23 +10,25 @@
     --lightgray-clr: #EFF3F4;
 }
 
-*{
+
+* {
     padding: 0;
     margin: 0;
     margin-left: 0;
     box-sizing: border-box;
     list-style: none;
 }
-body{
+
+body {
     font-family: sans-serif;
 }
 
-p{
+p {
     color: var(--grey-clr);
     font-size: 1.2rem;
 }
 
-a{
+a {
     text-decoration: none !important;
     font-weight: 600 !important;
 }
@@ -35,18 +37,18 @@ a{
     padding-left: 0;
 }
 
-.nav-item a{
+.nav-item a {
     font-size: 1rem !important;
     padding-inline: 1rem !important;
     font-weight: 600;
     border-radius: 10px;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 170px !important;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     background: var(--light-clr);
     color: var(--green-clr);
 }
@@ -55,80 +57,94 @@ a{
     flex-direction: column;
 }
 
-.text-bg{
-    background: linear-gradient(90deg, var(--green-clr),var(--yellow-clr));
+.text-bg {
+    background: linear-gradient(90deg, var(--green-clr), var(--yellow-clr));
     background-size: cover;
     background-position: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.hero-section{
+.hero-section {
     min-height: calc(100vh - 70px);
 }
 
-.btn-green{
+.btn-green {
     background: var(--green-clr) !important;
     border: 3px solid var(--green-clr) !important;
 }
 
-.btn{
+.btn {
     border: 1px solid var(--grey-clr) !important;
     height: auto;
 }
 
-.p-size{
+.p-size {
     max-width: 42rem;
     text-align: center;
 }
 
-.h1-size{
+.h1-size {
     font-size: 4.9rem;
     font-weight: 700;
     text-align: center;
 }
-.h2-size{
+
+.h2-size {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
 }
 
+.bg-grey {
+    background: var(--lightgray-clr);
+}
 
-.feature-content .left{
+.bg-gray-gradient {
+    background: linear-gradient(90deg, var(--lightgreen-clr), white);
+}
+
+.feature-content .left {
     flex-basis: 40%;
 }
-.feature-content .left p{
+
+.feature-content .left p {
     margin-bottom: 0;
 }
 
-.feature-content .right{
+.feature-content .right {
     flex-basis: 60%;
 }
-.feature-content .right img{
+
+.feature-content .right img {
     width: 100%;
     height: 514.312px;
     object-fit: cover;
 }
-.feature-link:hover{
-    background: linear-gradient(40deg, var(--green2-clr),var(--yellow2-clr));
+
+.feature-link:hover {
+    background: linear-gradient(40deg, var(--green2-clr), var(--yellow2-clr));
     border-radius: 20px 0 0 20px;
 }
-.none{
+
+.none {
     display: none !important;
 }
 
-.bg-lg{
+.bg-lg {
     border-radius: 20px 0 0 20px;
-    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
-}
-.bg-gradient-c {
-    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+    background: linear-gradient(90deg, var(--lightgray-clr), var(--lightgreen-clr), var(--lightyellow-clr)) !important;
 }
 
-.card-1{
+.bg-gradient-c {
+    background: linear-gradient(90deg, var(--lightgray-clr), var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+}
+
+.card-1 {
     margin-top: 3rem !important;
 }
-.card-3{
+
+.card-3 {
     margin-top: 2rem !important;
 }
 
@@ -168,96 +184,133 @@ a{
 ul {
     padding-inline-start: 0rem !important;
 }
-.package-item > div {
-    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+
+.package-item>div {
+    background: linear-gradient(90deg, var(--lightgray-clr), var(--lightgreen-clr), var(--lightyellow-clr)) !important;
     padding: 20px;
 }
+
 .package-item {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensures all items take up the full height of their parent */
+    height: 100%;
+    /* Ensures all items take up the full height of their parent */
 }
 
 .package-item ul {
-    
+
     padding: 0;
 }
+
 .package-item ul li {
     padding: 0 20px;
     margin-bottom: 7px;
 }
 
-li i{
+li i {
     margin-right: 8px;
 }
+
 .package-item .btn {
-    background: linear-gradient(90deg, var(--lightgray-clr),var(--lightgreen-clr), var(--lightyellow-clr)) !important;
+    background: linear-gradient(90deg, var(--lightgray-clr), var(--lightgreen-clr), var(--lightyellow-clr)) !important;
     border: none !important;
-    margin: 0 20px 20px; 
-    width: calc(100% - 40px); 
+    margin: 0 20px 20px;
+    width: calc(100% - 40px);
     margin-top: auto;
 }
 
-@media (min-width:1200px){
-    .feature-content .right img{
+.testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tesimoial-grid-item {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+    min-height: 0;
+    min-width: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width:1200px) {
+    .feature-content .right img {
         height: 100%;
     }
 }
 
-@media (max-width:940px){
-    p{
+@media (max-width:940px) {
+    p {
         font-size: 1rem;
     }
-    .feature-link p{
+
+    .feature-link p {
         font-size: 0.8rem;
     }
-    .feature-content .right img{
+
+    .feature-content .right img {
         height: 370px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 @media (max-width:768px) {
-    .h1-size{
+    .h1-size {
         font-size: 3.4rem;
         font-weight: 700;
     }
-    .h2-size{
+
+    .h2-size {
         font-size: 3rem;
     }
-    .hero-section{
+
+    .hero-section {
         min-height: calc(70vh - 70px);
     }
-    .benefit-item{
+
+    .benefit-item {
         grid-column: span 12;
     }
-    .card-1{
+
+    .card-1 {
         margin-top: 0rem !important;
-      }
-    .card-3{
+    }
+
+    .card-3 {
         margin-top: 0rem !important;
-      }
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width:640px) {
-    .hero-section{
+    .hero-section {
         min-height: calc(49vh - 70px);
     }
-    .h1-size{
+
+    .h1-size {
         font-size: 3rem;
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: 0.9rem;
     }
-    .h2-size{
+
+    .h2-size {
         font-size: 2.4rem;
     }
-    .feature-link p{
+
+    .feature-link p {
         font-size: 0.6rem;
     }
 }
-
