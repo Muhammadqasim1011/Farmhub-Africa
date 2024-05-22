@@ -10,7 +10,6 @@
     --lightgray-clr: #EFF3F4;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -236,6 +235,86 @@ li i {
 
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Ensure sections have a minimum width */
+    padding: 0 15px;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section .social-media {
+    display: flex;
+}
+
+.footer-section .social-media li {
+    margin-right: 10px;
+}
+
+.footer-section .social-media li a i {
+    font-size: 24px;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.footer-section .social-media li a i:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
 @media (min-width:1200px) {
     .feature-content .right img {
         height: 100%;
@@ -290,6 +369,14 @@ li i {
     .testimonial-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+    
+    .footer-section {
+        text-align: center; /* Center text for better appearance on small screens */
+    }
 }
 
 @media (max-width:640px) {
@@ -312,5 +399,12 @@ li i {
 
     .feature-link p {
         font-size: 0.6rem;
+    }
+    .footer-section .social-media {
+        justify-content: center; /* Center social media icons */
+    }
+
+    .footer-section .social-media li {
+        margin: 0 5px; /* Adjust spacing between icons */
     }
 }
